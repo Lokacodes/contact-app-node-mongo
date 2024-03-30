@@ -38,21 +38,10 @@ app.use(flash());
 
 app.get("/", (req, res) => {
 
-    const mhs = [
-        {
-            nama: "loka",
-            nrp: "3123550001",
-        },
-        {
-            nama: "dharma",
-            nrp: "3123550009",
-        },
-    ];
     res.render("index", {
         layout: 'layouts/main-layout.ejs',
         nama: "loka",
         title: "home page",
-        mhs: mhs,
     });
     // cara biasa hanya mengirimkan string
     // res.send('halo')
